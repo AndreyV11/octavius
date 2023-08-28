@@ -1,0 +1,29 @@
+1. создание репозитория git:
+    projectdir>git init
+
+2. создание репорзитория на github
+
+3. пуллим (синхронизируем) репозиторий на github
+    projectdir>git pull https://github.com/AndreyV11/octavius.git
+
+4. создаем файл readme.md
+
+5. создаем и активируем виртуальное окружение
+    projectdir>py -m venv venv
+    projectdir>venv\Scripts\activate
+    (venv)...projectdir>                        # теперь виртуальное окружение
+
+6. создаем текстовый файл с внешними зависимостями requirements.txt и устанавливаем эти зависимости
+    (venv)...projectdir>pip install -r requirements.txt
+
+7. создаем проект Django
+    (venv)...projectdir>django-admin startproject octavius_service
+
+8. проверка корректности создания Django проекта
+    (venv)...projectdir>py octavius_service/manage.py runserver
+    # при корректной работе на http://127.0.0.1:8000/ появится ракета и соответствующая надпись
+
+9. при успешном добавлении производим коммит в git
+    нажимаем зеленую галочку в правом верхем углу (справа от Git)
+    в левом верхнем окне выбираем файлы для коммита
+    в левом среднем окне пишем описание коммита
